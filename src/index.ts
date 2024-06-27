@@ -1,4 +1,4 @@
 import app from './app'
 Bun.serve({
-    fetch: app.fetch,
+    fetch: app.fetch.bind(app),
 })
